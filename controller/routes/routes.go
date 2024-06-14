@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"duckAPI/cmd/controller/handler"
+	"duckAPI/controller/handler"
 
 	"github.com/gin-gonic/gin"
 )

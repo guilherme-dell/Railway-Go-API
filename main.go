@@ -1,7 +1,7 @@
 package main
 
 import (
-	"duckAPI/cmd/controller/routes"
+	"duckAPI/controller/routes"
 	"fmt"
 	"os"
 
