@@ -2,5 +2,5 @@
 
 I developed this small project to learn how to deploy on the [Railway](https://railway.app/).
 
-[![Deploy on Railway](https://railway.app/button.svg)]
+![Deploy on Railway](https://railway.app/button.svg)
 
