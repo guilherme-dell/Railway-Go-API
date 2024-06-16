@@ -1,8 +1,8 @@
 package main
 
 import (
+	"duckAPI/controller/middleware"
 	"duckAPI/controller/routes"
-	"fmt"
 	"os"
 
 	"github.com/gin-gonic/gin"
@@ -11,9 +11,11 @@ import (
 func main() {
 
 	port := os.Getenv("PORT")
-	fmt.Printf("PORT=%s\n", port)
+	validApiKey := os.Getenv("VALID_API_KEY")
 
 	r := gin.Default()
+	r.Use(middleware.ApiKeyAuthMiddleware(validApiKey))
+
 	routes.InitRoutes(&r.RouterGroup)
 
 	apiListenPort := "0.0.0.0:" + port

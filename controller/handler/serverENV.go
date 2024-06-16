@@ -8,5 +8,5 @@ import (
 )
 
 func PrintServerENV(c *gin.Context) {
-	c.String(http.StatusOK, os.Getenv("TEST_EVN"))
+	c.String(http.StatusOK, os.Getenv("TEST_ENV"))
 }
